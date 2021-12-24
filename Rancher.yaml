@@ -1053,13 +1053,13 @@ spec:
 #      imagePullSecrets:
 #      - name: ""
 #      priorityClassName:
-       tolerations:
-        - key: "cattle.io/os"
-          operator: "Equal"
-          value: "linux"
-          effect: "NoSchedule"
-        nodeSelector:
-          kubernetes.io/os: "linux"
+      tolerations:
+      - key: "cattle.io/os"
+        operator: "Equal"
+        value: "linux"
+        effect: "NoSchedule"
+      nodeSelector:
+        kubernetes.io/os: "linux"
       serviceAccountName: longhorn-service-account
   updateStrategy:
     rollingUpdate:
@@ -1211,13 +1211,13 @@ spec:
 #      imagePullSecrets:
 #        - name: ""
 #      priorityClassName:
-       tolerations:
-        - key: "cattle.io/os"
-          operator: "Equal"
-          value: "linux"
-          effect: "NoSchedule"
-        nodeSelector:
-          kubernetes.io/os: "linux"
+         tolerations:
+         - key: "cattle.io/os"
+           operator: "Equal"
+           value: "linux"
+           effect: "NoSchedule"
+         nodeSelector:
+           kubernetes.io/os: "linux"
       serviceAccountName: longhorn-service-account
       securityContext:
         runAsUser: 0
